@@ -1,0 +1,52 @@
+#unifyre_iframe
+{
+      display: block;
+      background: #000;
+      border: none;
+      height: 1000px;
+      width: 100vw;
+}
+
+@media only screen and (max-width: 767px) {
+  #unifyre_iframe { height: 1000px; }
+}
+
+
+.header-bg-img
+{
+	background: url('../img/header_background.png') top center repeat-x; background-size:100%;);
+}
+
+.banner-mlk
+{
+	background: url('../img/banner_wage_peace.jpg') top center repeat-x; background-size:100%;);
+}
+
+.button-about a.button
+{
+	background-color: rgba(0, 176, 255, 1);
+	border: solid transparent 0px;
+	cursor: pointer !important;
+}
+
+.button-donate a.button
+{
+	background-color: rgba(228, 42, 123, 1);
+	border: solid transparent 0px;
+	cursor: pointer !important;
+}
+
+
+.header-logo-column
+{
+	font-size: : 25px;
+	font-weight: bold;
+	line-height: 1.1em;
+	color: #0082C4;
+}
+
+
+.has-image-centered {
+  margin-left: auto;
+  margin-right: auto;
+}

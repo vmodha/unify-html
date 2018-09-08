@@ -32,12 +32,21 @@
 /* Typography */
 
 h2 { font-size: 40px; font-family: "Poppins", sans-serif; font-weight: 800; }
-h3 { font-size: 22px; font-family: "Poppins", sans-serif; }
+h3 { font-size: 22px; font-family: "Poppins", sans-serif; font-weight: 800; }
+h4 { font-size: 20px; font-family:"futura-pt", sans-serif; }
 .large-font {font-size: 25px;}
 p, body { font-size: 16px; font-family:"futura-pt",sans-serif; }
 .big { font-size: 60px; }
 .center { text-align: center; }
+.shaded { background: rgba(0,0,0,0.68); }
+.border-blue { border: solid 1px #1DA2C5; padding: 0px 10px; }
 
+/* Width Controls */
+
+.width-600 { max-width: 600px; margin: 0 auto; text-align:justify; }
+.width-425 { max-width: 425px; margin: 0 auto; }
+
+/* Columns */
 
 .columns.is-vcentered {
       display: flex;
@@ -46,6 +55,7 @@ p, body { font-size: 16px; font-family:"futura-pt",sans-serif; }
         align-items: center;
 }
 
+/* */
 
 .header-logo-column .large-font
 {
@@ -75,7 +85,12 @@ p, body { font-size: 16px; font-family:"futura-pt",sans-serif; }
 {
 	background: url('../img/banner_wage_peace.jpg') top center no-repeat; background-size:cover;);
 }
-
+.banner-beach {
+		background: url('../img/30-days-of-action-beach.jpg') top center no-repeat; background-size:cover;);
+}
+.banner-blue {
+		background: url('../img/empower-movement-blue-gradient.jpg') top center no-repeat; background-size:cover;);
+}
 .background-we-have-unified
 {
 	background: url('../img/background_we_have_unified.jpg') bottom center no-repeat; background-size:cover;);	
@@ -104,6 +119,16 @@ p.subtitle {
 }
 
 /* Buttons */
+a.button {
+	background-color: #E42A7B;
+	border: solid transparent 0px;
+	cursor: pointer !important;
+	color: #fff;
+}
+a.button:hover {
+	background-color: #B01B5B;
+	color: #fff;
+}
 .button-about a.button {
 	background-color: #1DA2C5;
 	border: solid transparent 0px;

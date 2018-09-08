@@ -1,17 +1,3 @@
 $(document).ready(function(){
 
-}); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});

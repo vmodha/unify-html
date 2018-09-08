@@ -140,6 +140,35 @@ p.subtitle {
 	color: #fff;
 }
 
+
+
+
+/*****
+SECTION: PARTICIPATE NOW
+*****/
+.section.participate-now .card-content
+{
+  min-height: 160px;
+  max-height: 160px;
+}
+
+.section.participate-now .card-content .media-content .content
+{
+  min-height: 80px;
+  max-height: 80px;
+}
+
+
+/*****
+SECTION: PAST EVENTS GALLERY
+*****/
+.section-past-events .column
+{
+  padding-top: var(--columnGap);
+  padding-bottom: var(--columnGap);
+}
+
+
 /* Buttons */
 a.button {
 	background-color: #E42A7B;

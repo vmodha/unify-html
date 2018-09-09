@@ -104,9 +104,25 @@
   <section id="map" class="hero peace-map">
 
 
-    <iframe id="unifyre_iframe" frameborder="0" scrolling="no" noresize="noresize" marginwidth="0" marginheight="0" src="https://map-widget-dot-unifyre-staging-182017.appspot.com/"></iframe>
-
-
+   <style>
+    iframe {
+      display: block;
+      background: #000;
+      border: none;
+      height: 1000px;
+      width: 100vw;
+    }
+    </style>
+    <iframe id="unifyre_iframe" frameborder="0" scrolling="No" noresize="" marginwidth="0" marginheight="0" src="https://map-widget-dot-unifyre-45c4d.appspot.com/"></iframe>
+    <script>
+      window.addEventListener("message", receiveMessage, false);
+      function receiveMessage(event) {
+        if (event.data === "resetScroll") {
+          var element = document.getElementById("unifyre_iframe");
+          element.scrollIntoView();
+        }
+      }
+    </script>
 
 
   </section>

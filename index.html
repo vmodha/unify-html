@@ -41,7 +41,10 @@
   <section class="hero header-bg-img">  
     
     <div class="columns is-gapless is-multiline is-mobile" style="padding: 2rem">
-      <div class="column is-half button-about">
+    
+<!-- ABOUT BUTTON NOTE: STYLE="OPACITY: 0;" <br>
+-- HIDDEN UNTIL PAGE CREATED, keeps correct spacing -->
+      <div class="column is-half button-about" style="opacity:0;">
         <div class="is-pulled-left">
           <a href="https://www.unify.org/about" class="button is-link">ABOUT</a>
         </div>
@@ -98,7 +101,7 @@
 
 
 
-  <section class="hero peace-map">
+  <section id="map" class="hero peace-map">
 
 
     <iframe id="unifyre_iframe" frameborder="0" scrolling="no" noresize="noresize" marginwidth="0" marginheight="0" src="https://map-widget-dot-unifyre-staging-182017.appspot.com/"></iframe>
@@ -263,7 +266,7 @@
 
 
                   <p class='has-text-centered'>
-                    <a class="button" href="https://www.unify.org/peace">
+                    <a class="button" href="#map">
                       JOIN
                     </a>
                   </p>
@@ -402,6 +405,16 @@
     <div class="hero-body">
       <div class="container has-text-centered">
      
+     <div class="width-600">
+        <figure class=" has-image-centered">
+          <img src="./img/sdg_title.jpg" alt="Sustainable Development Goals">
+        </figure>
+
+        <figure class=" has-image-centered">
+          <img src="./img/sdgs.png" alt="Sustainable Development Goals">
+        </figure>
+		</div>
+     
           <h3 class="pink">
           MAKING WORLD PEACE 
 		  PRACTICAL AND MEASURABLE
@@ -422,16 +435,6 @@
         </p>
 
  		<p>&nbsp;</p>
-
-		<div class="width-600">
-        <figure class=" has-image-centered">
-          <img src="./img/sdg_title.jpg" alt="Sustainable Development Goals">
-        </figure>
-
-        <figure class=" has-image-centered">
-          <img src="./img/sdgs.png" alt="Sustainable Development Goals">
-        </figure>
-		</div>
 
         <p class='has-text-centered'>
           <a class='button is-centered' href='https://www.globalgiving.org/sdg/?rf=ggad_15&gclid=CjwKCAjw-qbLBRB7EiwAftBCI69uVJS7VhPVEcV9aKv1t6mBq8SjyueQgwcYSN5epxmFhBakMZ-M0RoC0DQQAvD_BwE'>
@@ -464,21 +467,26 @@
         <div class="columns is-gapless is-multiline is-mobile" style="padding: 2rem">
 
           <div class="column is-one-third">
-            <h3 class="white">10Mil+
+            <h3 class="white">over
+            <br/>
+            <br/>
+            <span class="big">10Mil+</span>
             <br />
             PEOPLE</h3>
           </div>
           <div class="column is-one-third">
             <h3 class="white">in over
             <br/>
-            10k+
+            <br/>
+            <span class="big">10k+</span>
             <br />
             CITIES</h3>
           </div>
           <div class="column is-one-third">
             <h3 class="white">in over
             <br/>
-            150+
+            <br/>
+            <span class="big">150+</span>
             <br />
             COUNTRIES</h3>
           </div>
@@ -716,8 +724,8 @@
 
         <div class="column is-one-third button-about">
         <div class="is-pulled-left has-text-left">
-
-          <a href="https://www.unify.org/about" target="_self">About</a>  |  <a href="mailto:info@unify.org" target="_self" data-content="info@unify.org" data-type="mail">Contact us</a> |  <a href="https://www.unify.org/privacy" target="_self">Privacy</a><br />
+<!-- HIDE ABOUT & PRIVACY UNTIL BUILT --> 
+          <a style="display:none;" href="https://www.unify.org/about" target="_self">About</a>  |  <a href="mailto:info@unify.org" target="_self" data-content="info@unify.org" data-type="mail">Contact us</a> |  <a style="display:none;" href="https://www.unify.org/privacy" target="_self">Privacy</a><br />
 Unify is a 501(c)3 Charitable Organization<br />
 ©2017 UNIFY.org
 

@@ -1,12 +1,9 @@
-/**** 
-General Styling
-****/
-
 
 /* Fonts */
 
 /* Poppins - Headers - Google Font */
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins|Roboto');
+
 /* Futura PT - Subheaders/Body - Typekit */
 @import url("https://use.typekit.net/vau1lui.css");
 
@@ -16,6 +13,25 @@ General Styling
   font-weight:400;
 
 }
+
+
+
+
+/**** 
+General Styling
+****/
+.is-divider.rainbow
+{
+  border:0px;
+  background: url('../img/border-divider.png') top center no-repeat;
+  height:14px;
+}
+
+
+
+
+
+
 /* Color Scheme */
 
 
@@ -64,6 +80,66 @@ h4 { font-size: 20px; font-family:"futura-pt", sans-serif; }
 p, body { font-size: 16px; font-family:"futura-pt",sans-serif; }
 
 
+
+/**** HEADER LOGO AREA ****/
+
+.header-logo-column h3
+{
+  font-family: "Montserrat";
+  font-weight: lighter;
+  color:#000;
+}
+
+.header-logo-column .header-logo img
+  {
+    width:150px;
+  }
+
+
+/* Typography mobile:*/
+@media only screen and (max-width: 767px) {
+  h3
+  {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  .header-logo-column .header-logo img
+  {
+    width:100px;
+  }
+
+
+  .banner-days-action form ._form-content
+  {
+    margin:0 auto !important;
+    width:150px !important;
+  }
+
+  .banner-days-action form ._form-content ._button-wrapper._inline-style
+  {
+    text-align: center;
+    padding-top:20px !important;
+  }
+
+  .hero.banner-mlk h4
+  {
+    font-size:20px;
+  }
+
+  .section-social h4
+  {
+    margin-bottom: 40px;
+  }
+
+
+
+}
+
+
+
+
+
 .big { font-size: 60px; }
 
 
@@ -107,7 +183,7 @@ p, body { font-size: 16px; font-family:"futura-pt",sans-serif; }
       display: block;
       background: #000;
       border: none;
-      height: 1000px;
+      height: 950px;
       width: 100vw;
 }
 
@@ -116,24 +192,26 @@ p, body { font-size: 16px; font-family:"futura-pt",sans-serif; }
 }
 
 
+
+
 .header-bg-img
 {
-	background: url('../img/header_background.png') top center repeat-x; background-size:100%;);
+	background: url('../img/header_background.png') top center repeat-x; background-size:100%;
 }
 
 .banner-mlk
 {
-	background: url('../img/banner_wage_peace.jpg') top center no-repeat; background-size:cover;);
+	background: url('../img/banner_wage_peace.jpg') top center no-repeat; background-size:cover;
 }
-.banner-beach {
-		background: url('../img/30-days-of-action-beach.jpg') top center no-repeat; background-size:cover;);
+.banner-days-action {
+		background: url('../img/30-days-of-action.jpg') top center no-repeat; background-size:cover;
 }
 .banner-blue {
-		background: url('../img/empower-movement-blue-gradient.jpg') top center no-repeat; background-size:cover;);
+		background: url('../img/empower-movement-blue-gradient.jpg') top center no-repeat; background-size:cover;
 }
 .background-we-have-unified
 {
-	background: url('../img/background_we_have_unified.jpg') bottom center no-repeat; background-size:cover;);	
+	background: url('../img/background_we_have_unified.jpg') bottom center no-repeat; background-size:cover;	
 }
 
 /* Social Circles */
@@ -160,11 +238,41 @@ p.subtitle {
 }
 
 
+/*****
+SECTION: HOMEPAGE TOP
+*****/
+.column.peace-movement-text
+{
+  padding-top:0px;
+}
+
+.video-play-icon
+{
+  background: url('../img/play-button.png') top left no-repeat; background-size:cover;
+  height:60px;
+  width:60px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-top:20px;
+}
+
+.video-play-icon:hover
+{
+  background-position: top right;
+}
 
 
 /*****
 SECTION: PARTICIPATE NOW
 *****/
+
+.section.participate-now .blue
+{
+  color: #2b3cba;
+}
+
+
 .section.participate-now .card-content
 {
   min-height: 160px;
@@ -186,6 +294,97 @@ SECTION: PAST EVENTS GALLERY
   padding-top: var(--columnGap);
   padding-bottom: var(--columnGap);
 }
+
+
+
+
+/*****
+SECTION: PEACE IN ACTION - 30 Days of Action - FORM
+*****/
+
+.banner-days-action .container
+{
+  padding:20px;
+  max-width:700px;
+}
+
+.banner-days-action p.width-600
+{
+  padding-top:50px;
+}
+
+.banner-days-action
+{
+  color: #fff;
+}
+
+/*****
+SECTION: WORLD PEACE WEEKEND EVENTS
+*****/
+.section.world-peace-weekend .blue
+{
+  color: #2b3cba;
+}
+
+.section.world-peace-weekend h3.title
+{
+  font-size: 30px;
+  font-weight: normal;
+  font-family: "Roboto";
+}
+
+.section.world-peace-weekend h3.blue
+{
+  font-size: 20px;
+}
+
+
+
+/*****
+SECTION: MLK BANNER
+*****/
+.banner-mlk h4
+{
+  font-size:23px;
+}
+
+/*****
+SECTION: SDG's
+*****/
+.section-sdgs h3 {margin-bottom: 50px}
+
+
+
+/*****
+SECTION: SOCIAL LINKS (CIRCLES)
+*****/
+.social-link
+{
+  display:inline-block;
+  color:#fff;
+}
+
+.social-link:hover
+{
+  color:#fff;
+}
+
+.section-social h4
+{
+  margin: 10px 0 20px 0;
+}
+
+.social-link img {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+.social-link:hover img {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+
+
 
 
 /* Buttons */
@@ -232,7 +431,8 @@ a.button:hover {
 }
 
 /* Active Campaign Form */
-
+/******* vmodha: ; THIS DOESNT WORK ********/
+/*******
  #_form_73_ { font-size:14px; line-height:1.6; font-family:arial, helvetica, sans-serif; margin:0; }
  #_form_73_ * { outline:0; }
  ._form_hide { display:none; visibility:hidden; }
@@ -299,7 +499,7 @@ a.button:hover {
  #_form_73_ input[type="text"] { padding-left:10px; padding-right:10px; font-size:16px; line-height:1.3em; -webkit-appearance:none; }
  #_form_73_ input[type="radio"],#_form_73_ input[type="checkbox"] { display:inline-block; width:1.3em; height:1.3em; font-size:1em; margin:0 0.3em 0 0; vertical-align:baseline; }
  #_form_73_ button[type="submit"] { padding:20px; font-size:1.5em; }
- #_form_73_ ._inline-style { margin:20px 0 0 !important; }
+ 
  }
  #_form_73_ { position:relative; text-align:left; margin:25px auto 0; padding:20px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; *zoom:1; background:transparent !important; border:0px solid #fff !important; -moz-border-radius:5px !important; -webkit-border-radius:5px !important; border-radius:5px !important; color:#e63588 !important; }
  #_form_73_ ._form-title { font-size:22px; line-height:22px; font-weight:600; margin-bottom:0; }
@@ -313,6 +513,7 @@ a.button:hover {
  #_form_73_ ._form-thank-you { position:relative; left:0; right:0; text-align:center; font-size:18px; }
  @media all and (min-width:320px) and (max-width:667px) { #_form_73_._inline-form._inline-style ._inline-style._button-wrapper { margin-top:20px !important; margin-left:0 !important; }
  }
+*******/
 
 input { 
 background: #fff;

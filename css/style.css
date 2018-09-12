@@ -164,7 +164,6 @@ MOBILE STYLES
   .section.participate-now .card-content .media-content .content {
 
     min-height: 0px;
-    max-height: none;
     padding-bottom:10px;
     padding-top:10px; 
 
@@ -326,7 +325,6 @@ SECTION: PARTICIPATE NOW
 .participate-now .card-content .media-content .content
 {
   min-height: 80px;
-  max-height: 80px;
 }
 
 
@@ -433,6 +431,14 @@ SECTION: SOCIAL LINKS (CIRCLES)
   margin-top:40px;
 }
 
+
+/*****
+SECTION: HERO WORLD PEACE CAMPAIGN
+*****/
+.world-peace-campaign .width-600
+{
+  margin-top: 20px;
+}
 
 
 

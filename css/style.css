@@ -467,7 +467,7 @@ a.button:hover {
 
 .header-logo-column
 {
-	font-size: : 25px;
+	font-size: 25px;
 	line-height: 1.1em;
 }
 
@@ -564,7 +564,7 @@ a.button:hover {
 
 input { 
 background: #fff;
-box-shadow: 0px 2px 0px #000
+box-shadow: 0px 2px 0px #000;
 font-size: 20px !important;
  }
 ._submit {

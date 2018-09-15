@@ -33,6 +33,14 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 
+/** spacing around the circle images */
+.card-image img.is-rounded
+{
+  width:90%;
+  height:90%;
+  margin: 0 auto;
+}
+
 .is-divider.rainbow
 {
   border:0px;
@@ -40,7 +48,28 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   height:14px;
 }
 
+.is-divider.rainbow.no-gap
+{
+  margin:0;
+  padding: 0;
+  height:9px;
+  line-height: 100%;
+}
 
+.is-divider.rainbow.rainbow-top
+{
+  background-position: 50% 2px;
+}
+
+.is-divider.rainbow.rainbow-bottom
+{
+  background-position: 50% 100%;
+}
+
+.is-divider.rainbow::after {
+    content: "";
+    display: none;
+}
 
 
 
@@ -87,8 +116,8 @@ styling the modal video
 
 /* Typography */
 
-h2 { font-size: 40px; font-family: "Poppins", sans-serif; font-weight: 800; }
-h3 { font-size: 22px; font-family: "Poppins", sans-serif; font-weight: 800; line-height: 26px; }
+h2 { font-size: 40px; font-family: "Poppins", sans-serif; font-weight: 600; }
+h3 { font-size: 22px; font-family: "Poppins", sans-serif; font-weight: 600; line-height: 26px; }
 h4 { font-size: 20px; font-family:"futura-pt", sans-serif; }
 .large-font {font-size: 25px;}
 p, body { font-size: 16px; font-family:"futura-pt",sans-serif; }
@@ -113,7 +142,27 @@ p, body { font-size: 16px; font-family:"futura-pt",sans-serif; }
 /******
 MOBILE STYLES
 *******/
+.is-not-mobile-only
+  {
+    display:block;
+  }
+  .is-mobile-only
+  {
+    display:none;
+  }
+
 @media only screen and (max-width: 767px) {
+
+.is-not-mobile-only
+  {
+    display:none;
+  }
+  .is-mobile-only
+  {
+    display:block;
+  }
+
+
   h3
   {
     font-size: 17px;
@@ -149,6 +198,11 @@ MOBILE STYLES
   }
 
 
+  .section.participate-now h2
+  {
+    font-size:39px;
+  }
+
   .section.participate-now .card-content h3
   {
     font-size:26px;
@@ -170,7 +224,7 @@ MOBILE STYLES
 }
 
 }
-
+/***** END OF MOBILE ONLY STYLES *****/
 
 
 
@@ -228,24 +282,33 @@ MOBILE STYLES
 
 
 
+/******
+BACKGROUND IMAGES
+******/
 
 .header-bg-img
 {
-	background: url('../img/header_background.png') repeat-x top center;
+	background: url('../img/background-header.png') repeat-x top center;
   background-size:100%;
+}
+
+.banner-world-peace-broadcast
+{
+    background: url('../img/background-world-peace-broadcast.jpg') no-repeat bottom center;
+    background-size:cover;
 }
 
 .banner-mlk
 {
-	background: url('../img/banner_wage_peace.jpg') no-repeat top center;
+	background: url('../img/background-banner_wage_peace.jpg') no-repeat top center;
   background-size:cover;
 }
 .banner-days-action {
-		background: url('../img/30-days-of-action.jpg') no-repeat top center;
+		background: url('../img/background-30-days-of-action.jpg') no-repeat bottom center;
     background-size:cover;
 }
 .banner-blue {
-		background: url('../img/empower-movement-blue-gradient.jpg') no-repeat top center;
+		background: url('../img/background-empower-movement-blue-gradient.jpg') no-repeat top center;
     background-size:cover;
 }
 .background-we-have-unified
@@ -268,6 +331,21 @@ MOBILE STYLES
   	margin: 0 auto;
   	margin-top: 20px;
 }
+
+.is-rounded
+{
+-webkit-box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.4);
+-moz-box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.4);
+box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.4);
+}
+
+.is-rounded.no-shaddow
+{
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none; 
+}
+
 .circle-social
 {
 	width:100%;
@@ -304,6 +382,30 @@ SECTION: HOMEPAGE TOP
 
 
 /*****
+SECTION: WORLD PEACE BROADCAST;
+*****/
+.banner-world-peace-broadcast img
+{
+  padding-right:50px;
+}
+
+.banner-world-peace-broadcast h2
+{
+  line-height:40px;
+  margin-bottom:10px;
+}
+
+.banner-world-peace-broadcast h2 span.bigger
+{
+  font-size: 45px;
+}
+
+.banner-world-peace-broadcast p.white
+{
+  padding:20px 20px 0px 20px;
+
+}
+/*****
 SECTION: PARTICIPATE NOW
 *****/
 
@@ -316,11 +418,16 @@ SECTION: PARTICIPATE NOW
 .participate-now .blue a:hover { color: #2b3cba; }
 
 
-.participate-now .card-content
+.section.participate-now .card-content.hero-body
 {
-  min-height: 160px;
-  max-height: 160px;
+  padding:20px 0 30px 0;
 }
+
+.section.participate-now .card-content
+{
+  padding-top:0px;
+}
+
 
 .participate-now .card-content .media-content .content
 {
@@ -344,6 +451,12 @@ SECTION: PAST EVENTS GALLERY
 SECTION: PEACE IN ACTION - 30 Days of Action - FORM
 *****/
 
+.banner-days-action h2
+{
+  padding-top:20px;
+  line-height: 1.3;
+}
+
 .banner-days-action .container
 {
   padding:20px;
@@ -352,8 +465,14 @@ SECTION: PEACE IN ACTION - 30 Days of Action - FORM
 
 .banner-days-action p.width-600
 {
-  padding-top:50px;
+  padding-top:20px;
+  text-align: center;
 }
+
+  .banner-days-action ._form_73
+  {
+    margin-top: -30px;
+  }
 
 .banner-days-action
 {
@@ -372,7 +491,7 @@ SECTION: WORLD PEACE WEEKEND EVENTS
 {
   font-size: 30px;
   font-weight: normal;
-  font-family: "Roboto";
+  font-family: "Poppins";
 }
 
 .section.world-peace-weekend h3.blue

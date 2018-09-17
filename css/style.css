@@ -32,6 +32,10 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     outline : 0;
 }
 
+.has-text-white h2
+{
+  color: #fff;
+}
 
 /** spacing around the circle images */
 .card-image img.is-rounded
@@ -515,10 +519,7 @@ SECTION: MLK BANNER
   font-size:23px;
 }
 
-.banner-mlk .hero-body, .banner-mlk h2
-{
-  color: #fff;
-}
+
 
 /*****
 SECTION: SDG's

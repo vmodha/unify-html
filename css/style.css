@@ -198,6 +198,7 @@ MOBILE STYLES
   }
 
 
+
   .section.participate-now h2
   {
     font-size:39px;
@@ -504,9 +505,19 @@ SECTION: WORLD PEACE WEEKEND EVENTS
 /*****
 SECTION: MLK BANNER
 *****/
+.banner-mlk
+{
+  padding:50px 0;
+}
+
 .banner-mlk h4
 {
   font-size:23px;
+}
+
+.banner-mlk .hero-body, .banner-mlk h2
+{
+  color: #fff;
 }
 
 /*****
@@ -557,6 +568,7 @@ SECTION: HERO WORLD PEACE CAMPAIGN
 .world-peace-campaign .width-600
 {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 

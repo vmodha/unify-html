@@ -110,7 +110,9 @@
       width: 100vw;
     }
     </style>
-    <iframe id="unifyre_iframe" frameborder="0" scrolling="No" noresize="" marginwidth="0" marginheight="0" src="https://map-widget-dot-unifyre-45c4d.appspot.com/"></iframe>
+
+    <iframe name="unifyre" id="unifyre_iframe" frameborder="0" scrolling="No" noresize="" marginwidth="0" marginheight="0" src="https://map-widget-dot-unifyre-staging-182017.appspot.com/"></iframe>
+
     <script>
       window.addEventListener("message", receiveMessage, false);
       function receiveMessage(event) {
@@ -120,7 +122,7 @@
         }
       }
     </script>
-
+PST
 
   </section>
 
@@ -136,7 +138,7 @@
           </div>
           <div class="column is-two-fifths">
             <h2 class="white">WORLD PEACE <span class="bigger">BROADCAST</span></h2>
-            <h3 class="white">BEGINS SEPT. 21 , 8:30AM EST</h3>
+            <h3 class="white">BEGINS SEPT. 21 , 8:30AM PST</h3>
             <p class="white">
             Join us from September 21-23 for the world’s largest 
             live peace broadcast, featuring hosts and artists from 
@@ -144,7 +146,7 @@
             Sign up to tune in to #WAGEPEACE week
             </p>
             <p class="white">
-            <strong>Text "UNIFY" to 888111 (USA) or 66922 (Canada) NOW to get notified when the broadcast goes live!</strong>
+            <strong class="white">Text "UNIFY" to 888111 (USA) or 66922 (Canada) NOW to get notified when the broadcast goes live!</strong>
             </p>
           </div>
         </div>
@@ -223,8 +225,10 @@
         </div>
       </div>
 
+
+
       <p class='has-text-centered'>
-          <a class="button" href="#map">
+          <a class="button" href="javascript:;" onClick="window.frames.unifyre.postMessage('participate', '*')">
             PARTICIPATE
           </a>
         </p>

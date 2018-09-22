@@ -17,6 +17,8 @@
 
 
 
+
+
 /**** 
 General Styling
 ****/
@@ -139,9 +141,12 @@ p, body { font-size: 16px; font-family:"futura-pt",sans-serif; }
   }
 
 
+
 /******
 MOBILE STYLES
 *******/
+
+
 .is-not-mobile-only
   {
     display:block;
@@ -152,6 +157,12 @@ MOBILE STYLES
   }
 
 @media only screen and (max-width: 767px) {
+
+
+.live-feed
+{
+  padding: 20px 0 0 0 ;
+}
 
 .is-not-mobile-only
   {
@@ -274,6 +285,25 @@ MOBILE STYLES
   line-height: 30px;
 }
 
+
+
+
+#live-feed
+{
+      display: block;
+      background: #000;
+      border: none;
+      /*
+      width: 100%;
+      height: 100%;
+      max-width: 1080px;
+      */
+      height: 600px;
+      width: 800px;
+      margin-bottom: 20px;
+      margin:0 auto;
+}
+
 #unifyre_iframe
 {
       display: block;
@@ -285,6 +315,13 @@ MOBILE STYLES
 
 @media only screen and (max-width: 767px) {
   #unifyre_iframe { height: 1000px; }
+
+  #live-feed
+  {
+    height: 250px;
+    width:350px;
+    margin: 20px auto;
+  }
 }
 
 
@@ -527,6 +564,14 @@ SECTION: GAIA
 }
 
 /*****
+SECTION: WE HAVE UNIFIED
+*****/
+.background-we-have-unified .columns
+{
+  padding: 2rem;
+}
+
+/*****
 SECTION: DDP
 *****/
 .logo-ddp
@@ -667,6 +712,12 @@ SECTION: MLK BANNER
 .banner-mlk
 {
   padding:50px 0;
+}
+
+.banner-mlk .hero-body
+{
+  padding-top: 15rem;
+  padding-bottom: 3rem;
 }
 
 .banner-mlk h4

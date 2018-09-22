@@ -161,7 +161,7 @@ MOBILE STYLES
 
 .live-feed
 {
-  padding: 20px 0 0 0 ;
+  padding: 20px 0 0 0;
 }
 
 .is-not-mobile-only
@@ -287,6 +287,10 @@ MOBILE STYLES
 
 
 
+.live-feed
+{
+  padding-bottom:1.5rem;
+}
 
 #live-feed
 {
@@ -315,6 +319,11 @@ MOBILE STYLES
 
 @media only screen and (max-width: 767px) {
   #unifyre_iframe { height: 1000px; }
+
+  .live-feed
+  {
+    padding-bottom:0rem;
+  }
 
   #live-feed
   {
@@ -734,8 +743,17 @@ SECTION: MLK BANNER
 /*****
 SECTION: SDG's
 *****/
+.sdg-banner
+{
+  max-width: 782px;
+  margin:0 auto;
+}
 
-
+.sdg-image
+{
+  max-width: 1334px;
+  margin:0 auto;
+}
 
 
 /*****
